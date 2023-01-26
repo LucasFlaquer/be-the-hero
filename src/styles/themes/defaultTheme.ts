@@ -3,6 +3,7 @@ export const defaultTheme = {
     background: '#f0f0f5',
     border: '#DCDCE5',
     primary: '#e02041',
+    text: '#41414D',
   },
   fonts: {
     baloo: '"Baloo 2", cursive',
