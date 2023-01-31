@@ -1,6 +1,7 @@
 import { DefaultInput } from '../Home/styles'
 import * as S from './styles'
 import Logo from '../../assets/Logo.svg'
+import { Button } from '../../components/Form/Button'
 
 export function Register() {
   return (
@@ -19,13 +20,16 @@ export function Register() {
             <strong>Voltar para o logon</strong>
           </a>
         </div>
-        <form action="">
-          <DefaultInput />
-          <DefaultInput />
-          <DefaultInput />
-          <DefaultInput />
-          <DefaultInput />
-        </form>
+        <S.RegisterForm action="">
+          <DefaultInput placeholder="Nome da ONG" />
+          <DefaultInput placeholder="E-mail" type="email" />
+          <DefaultInput placeholder="whatsapp" />
+          <S.FieldGroup>
+            <DefaultInput placeholder="Cidade" />
+            <DefaultInput placeholder="UF" />
+          </S.FieldGroup>
+          <Button type="submit">Cadastrar</Button>
+        </S.RegisterForm>
       </S.MainContent>
     </S.PageWrapper>
   )

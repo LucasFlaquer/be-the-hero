@@ -4,6 +4,7 @@ export const defaultTheme = {
     border: '#DCDCE5',
     primary: '#e02041',
     text: '#41414D',
+    textLight: '#737380',
   },
   fonts: {
     baloo: '"Baloo 2", cursive',
