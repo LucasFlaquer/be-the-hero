@@ -71,4 +71,8 @@ export const RegisterForm = styled.form`
 export const FieldGroup = styled.div`
   display: flex;
   gap: 1rem;
+
+  input + input {
+    flex-basis: 25%;
+  }
 `
