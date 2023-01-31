@@ -2,6 +2,8 @@ import { DefaultInput } from '../Home/styles'
 import * as S from './styles'
 import Logo from '../../assets/Logo.svg'
 import { Button } from '../../components/Form/Button'
+import { FiArrowLeft } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 export function Register() {
   return (
@@ -16,9 +18,10 @@ export function Register() {
             Faça seu cadastro, entre na plataforma e ajude pessoas a encontrarem
             os casos da sua ONG
           </p>
-          <a href="">
+          <Link to={'/'}>
+            <FiArrowLeft size={20} />
             <strong>Voltar para o logon</strong>
-          </a>
+          </Link>
         </div>
         <S.RegisterForm action="">
           <DefaultInput placeholder="Nome da ONG" />
