@@ -7,6 +7,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
 import { DefaultInput } from '../../components/Form/Input/DefaultInput'
+import { Link } from 'react-router-dom'
 
 const schema = z.object({
   id: z.string().min(1, 'ID obrigatório'),
@@ -46,10 +47,10 @@ export function Home() {
           <Button type="submit">Entrar</Button>
         </S.BannerForm>
 
-        <a href="">
+        <Link to={'/register'}>
           <FiLogIn size={16} />
           <strong>Não tenho cadastro</strong>
-        </a>
+        </Link>
       </S.BannerContent>
       <img src={BannerImage} alt="" />
     </S.Container>
