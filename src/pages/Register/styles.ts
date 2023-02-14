@@ -65,14 +65,16 @@ export const RegisterForm = styled.form`
   max-width: 45%;
 
   input {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 `
 export const FieldGroup = styled.div`
   display: flex;
-  gap: 1rem;
-
-  input + input {
-    flex-basis: 25%;
+  gap: 0.5rem;
+  > div {
+    flex-grow: 1;
+  }
+  > div + div {
+    flex-basis: 10%;
   }
 `

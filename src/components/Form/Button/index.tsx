@@ -13,6 +13,7 @@ export const Button = styled.button<ButtonProps>`
   font-weight: 700;
   font-size: 1.125rem;
   font-family: ${({ theme }) => theme.fonts.roboto};
+  cursor: pointer;
 
   ${({ variant, theme }) =>
     variant === 'primary' &&

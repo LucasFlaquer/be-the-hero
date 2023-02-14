@@ -5,15 +5,6 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
   error?: string
 }
 
-// export function DefaultInput({ error, ...rest }: Props) {
-//   return (
-//     <InputWrapper>
-//       <input {...rest} />
-//       {error && <span>{error}</span>}
-//     </InputWrapper>
-//   )
-// }
-
 export const DefaultInput = forwardRef(function DefaultInput(
   { error, ...rest }: Props,
   ref: ForwardedRef<HTMLInputElement>,
