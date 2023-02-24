@@ -47,7 +47,7 @@ export function Home() {
           <Button type="submit">Entrar</Button>
         </S.BannerForm>
 
-        <Link to={'/register'}>
+        <Link to={'/register'} data-testid={'link'}>
           <FiLogIn size={16} />
           <strong>Não tenho cadastro</strong>
         </Link>
