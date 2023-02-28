@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components'
 
 interface ButtonProps {
-  variant?: 'primary' | 'secondary'
+  variant?: 'primary' | 'outline'
 }
 
 export const Button = styled.button<ButtonProps>`
   width: 100%;
-  padding: 1.25rem;
+  padding: 1.125rem;
   border: none;
   border-radius: 8px;
   color: #f0f0f5;
@@ -16,11 +16,16 @@ export const Button = styled.button<ButtonProps>`
   cursor: pointer;
 
   ${({ variant, theme }) =>
-    variant === 'primary' &&
+    (variant === undefined || variant === 'primary') &&
     css`
       background: ${theme.colors.primary};
     `}
+
+  ${({ variant, theme }) =>
+    variant === 'outline' &&
+    css`
+      background: transparent;
+      color: ${theme.colors.text};
+      border: 1px solid ${theme.colors.textLight};
+    `}
 `
-Button.defaultProps = {
-  variant: 'primary',
-}
