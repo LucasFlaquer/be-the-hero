@@ -23,7 +23,7 @@ export const InputWrapper = styled.div<WrapperProps>`
   span {
     position: absolute;
     left: 0;
-    bottom: -0.5rem;
+    bottom: -1.2rem;
     display: inline-block;
     margin-top: 0.5rem;
     font-family: ${({ theme }) => theme.fonts.roboto};

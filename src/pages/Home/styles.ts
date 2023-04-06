@@ -39,13 +39,6 @@ export const BannerTitle = styled.h1`
   margin-bottom: 2rem;
 `
 
-export const BannerForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2.5rem;
-`
-
 export const DefaultInput = styled.input`
   width: 100%;
   padding: 1.25rem 1.25rem;
