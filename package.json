@@ -7,11 +7,13 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "dev:server": "json-server --watch fake-server/db.json",
     "test": "jest"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
     "@types/react-input-mask": "^3.0.2",
+    "axios": "^1.3.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.42.1",
